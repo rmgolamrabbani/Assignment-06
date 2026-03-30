@@ -1,122 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Starter Resume Kit",
-    "description": "Perfect for beginners to create a professional resume quickly.",
-    "price": 9.99,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "mo",
+    "tag": "Best Seller",
+    "tagType": "warning",
     "features": [
-      "20+ templates",
-      "Basic customization",
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "primary",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "mo",
+    "tag": "New",
+    "tagType": "success",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ],
+    "icon": "📷"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "primary",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ],
+    "icon": "⚙️"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "success",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
       "Export to PDF"
     ],
     "icon": "📄"
   },
   {
-    "id": 2,
-    "name": "Pro Resume Builder",
-    "description": "Advanced tools to craft ATS-friendly resumes.",
-    "price": 19.99,
-    "period": "one-time",
-    "tag": "best seller",
-    "tagType": "best",
-    "features": [
-      "100+ templates",
-      "ATS optimization",
-      "Cover letter builder"
-    ],
-    "icon": "🚀"
-  },
-  {
-    "id": 3,
-    "name": "Career Boost Plan",
-    "description": "Monthly plan with resume updates and job tips.",
-    "price": 7.99,
-    "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
-    "features": [
-      "Resume updates",
-      "Job alerts",
-      "Email support"
-    ],
-    "icon": "📈"
-  },
-  {
-    "id": 4,
-    "name": "Portfolio Website Builder",
-    "description": "Create a stunning personal portfolio with ease.",
-    "price": 29.99,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "features": [
-      "Drag & drop builder",
-      "Custom domains",
-      "Responsive design"
-    ],
-    "icon": "🌐"
-  },
-  {
-    "id": 5,
-    "name": "Freelancer Pro Pack",
-    "description": "Everything freelancers need to showcase and manage work.",
-    "price": 12.99,
-    "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
-    "features": [
-      "Client management",
-      "Invoice generator",
-      "Project tracking"
-    ],
-    "icon": "💼"
-  },
-  {
     "id": 6,
-    "name": "Ultimate Career Bundle",
-    "description": "All-in-one package for job seekers and professionals.",
-    "price": 99.99,
-    "period": "yearly",
-    "tag": "best seller",
-    "tagType": "best",
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
+    "period": "mo",
+    "tag": "Best Seller",
+    "tagType": "warning",
     "features": [
-      "Unlimited resumes",
-      "Portfolio builder",
-      "Priority support"
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
     ],
-    "icon": "🏆"
-  },
-  {
-    "id": 7,
-    "name": "Interview तैयारी Kit",
-    "description": "Practice and prepare for interviews effectively.",
-    "price": 5.99,
-    "period": "monthly",
-    "tag": "new",
-    "tagType": "new",
-    "features": [
-      "Mock interviews",
-      "Common Q&A",
-      "Feedback system"
-    ],
-    "icon": "🎤"
-  },
-  {
-    "id": 8,
-    "name": "AI Resume Assistant",
-    "description": "Generate smart resumes using AI suggestions.",
-    "price": 14.99,
-    "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
-    "features": [
-      "AI writing suggestions",
-      "Keyword optimization",
-      "Instant formatting"
-    ],
-    "icon": "🤖"
+    "icon": "📱"
   }
 ]

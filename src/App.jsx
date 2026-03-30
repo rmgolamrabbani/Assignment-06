@@ -4,6 +4,7 @@ import Cart from "./component/Cart";
 import Footer from "./component/Footer";
 import Models from "./component/Models";
 import NavBar from "./component/NavBar";
+import Steps from "./component/GetStarted";
 import { ToastContainer } from 'react-toastify'
 
 const getModels = async () => {
@@ -47,6 +48,8 @@ function App() {
       {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>}
 
       {activeTab === "cart" && <Cart  carts={carts} setCarts={setCarts}/>}
+
+      <Steps/>
 
       <Footer />
 
