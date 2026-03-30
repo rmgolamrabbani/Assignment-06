@@ -4,7 +4,10 @@ import Cart from "./component/Cart";
 import Footer from "./component/Footer";
 import Models from "./component/Models";
 import NavBar from "./component/NavBar";
-import Steps from "./component/GetStarted";
+import GetStarted from "./component/GetStarted";
+import Transparent from "./component/Transparent";
+import Rating from "./component/Rating";
+
 import { ToastContainer } from 'react-toastify'
 
 const getModels = async () => {
@@ -25,6 +28,8 @@ function App() {
       <NavBar />
 
       <Banner />
+
+      <Rating/>
 
       {/* name of each tab group should be unique */}
       <div className="tabs tabs-box justify-center bg-transparent">
@@ -49,8 +54,8 @@ function App() {
 
       {activeTab === "cart" && <Cart  carts={carts} setCarts={setCarts}/>}
 
-      <Steps/>
-
+      <GetStarted/>
+      <Transparent/>
       <Footer />
 
        <ToastContainer/>
@@ -59,3 +64,5 @@ function App() {
 }
 
 export default App;
+
+

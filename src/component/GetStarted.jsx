@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { UserPlus, Package, Rocket } from 'lucide-react';
 
 const GetStarted = () => {
@@ -28,14 +28,14 @@ const GetStarted = () => {
       <div className="max-w-6xl mx-auto text-center">
         {/* Header Section */}
         <div className="mb-12">
-            <div className="w-8 h-1 bg-blue-400 mx-auto mb-6"></div>
+           
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Get Started In 3 Steps
             </h2>
             <p className="text-gray-500">
                 Start using premium digital tools in minutes, not hours.
             </p>
-            <div className="w-8 h-1 bg-pink-400 mx-auto mt-6"></div>
+           
         </div>
 
         {/* Steps Grid */}

@@ -12,7 +12,7 @@ const Models = ({ modelPromise, carts, setCarts }) => {
         <p>One subscription gives you access to all frontier AI models</p>
       </div>
 
-      <div className="grid  md:grid-cols-2  lg:grid-cols-3 gap-5 mt-10">
+      <div className="grid  md:grid-cols-2  lg:grid-cols-3 gap-5 mt-10 w-[80%] mx-auto ">
         {models.map((model) => (
          <ModelCard key={model.id} model={model} carts={carts} setCarts={setCarts}/>
         ))}
