@@ -1,6 +1,9 @@
 
 import './App.css'
 import NavBar from './component/NavBar'
+import Banner from "./component/Banner";
+import Footer from "./component/Footer";
+
 
 function App() {
 
@@ -8,7 +11,8 @@ function App() {
   return (
     <>
       <NavBar/>
-      
+      <Banner/>
+      <Footer/>
     </>
   )
 }
