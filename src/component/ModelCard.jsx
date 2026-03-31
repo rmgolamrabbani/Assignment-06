@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const ModelCard = ({ model, carts, setCarts }) => {
+  const ModelCard = ({ model, carts, setCarts }) => {
   const { name, description, price, period, tag, tagType, features, icon } = model;
   const [isBuy, setIsBuy] = useState(false);
 

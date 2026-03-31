@@ -8,7 +8,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-indigo-600 to-purple-600 py-12 px-6">
+    <section className="bg-gradient-to-r from-indigo-600 to-purple-600 py-12 px-6 mb-20">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-around gap-8 md:gap-0">
         {stats.map((stat, index) => (
           <React.Fragment key={index}>
@@ -22,7 +22,6 @@ const StatsSection = () => {
               </p>
             </div>
 
-            {/* Divider (Only show between items on desktop) */}
             {index !== stats.length - 1 && (
               <div className="hidden md:block h-16 w-[1px] bg-white/20"></div>
             )}

@@ -2,50 +2,54 @@ import BannerImage from "../assets/banner.png";
 
 const Banner = () => {
   return (
-    <div className="relative min-h-162.5 flex items-center overflow-hidden">
+    <div className="relative min-h-162.5 flex items-center overflow-hidden max-w-7xl w-[80%] mx-auto ">
       <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
         {/* Left Content */}
-        <div className="space-y-4">
-          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-medium px-5 py-2 rounded-full">
-            ✨ Frontier AI Models
+       <div className="space-y-6">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-50 border border-purple-100 text-purple-600 text-sm font-medium">
+            <span className="flex h-2 w-2 rounded-full bg-purple-600 animate-pulse"></span>
+            New: AI-Powered Tools Available
           </div>
 
-          <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tighter text-red-600">
-            One Subscription.
-            <br />
-            <span className="bg-linear-to-r from-red-400 via-orange-400 to-amber-400 bg-clip-text text-transparent">
-              All the AIs You Need
-            </span>
+          {/* Title */}
+          <h1 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-slate-900 leading-[1.1]">
+            Supercharge Your <br />
+            <span className="text-slate-800">Digital Workflow</span>
           </h1>
 
-          <p className="text-lg text-zinc-700 max-w-lg">
-            Experience the full spectrum of frontier intelligence — all the most
-            advanced AI models, unified under a single, powerful subscription.
+          {/* Description */}
+          <p className="text-gray-500 text-lg md:text-xl max-w-lg leading-relaxed">
+            Access premium AI tools, design assets, templates, and productivity 
+            software—all in one place. Start creating faster today.
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-red-600 hover:bg-red-500 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-red-500/30 flex items-center gap-3 group text-white">
-              Get Unlimited Access
-              <span className="group-hover:translate-x-1 transition">→</span>
-            </button>
-          </div>
+          <p className="text-gray-400 text-sm font-medium cursor-pointer hover:text-purple-600 transition-colors">
+            Explore Products
+          </p>
 
-          <div className="flex items-center gap-8 text-sm text-zinc-600 pt-6">
-            <div>✓ 50+ Frontier Models</div>
-            <div>✓ No Usage Limits</div>
-            <div>✓ Cancel Anytime</div>
+          {/* Buttons */}
+          <div className="flex flex-wrap gap-4 pt-4">
+            <button className="px-8 py-3.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-full font-bold shadow-lg shadow-purple-200 hover:opacity-90 transition-all active:scale-95">
+              Explore Products
+            </button>
+            
+            <button className="flex items-center gap-2 px-8 py-3.5 border-2 border-purple-600 text-purple-600 rounded-full font-bold hover:bg-purple-50 transition-all active:scale-95">
+             
+              Watch Demo
+            </button>
           </div>
         </div>
 
         {/* Right Image */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="relative">
+           <div className="relative">
             <img
               className="relative h-130 w-auto object-contain drop-shadow-2xl rounded-3xl animate-pulse"
               src={BannerImage}
               alt="AI Models Banner"
             />
-          </div>
+          </div> 
         </div>
       </div>
     </div>

@@ -1,119 +1,82 @@
-const Footer = () => {
+import { FaFacebookF, FaYoutube, FaXTwitter } from "react-icons/fa6";
+
+export default function Footer() {
   return (
-    <footer className="bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          {/* Logo & Description */}
-          <div className="md:col-span-5">
-            <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" alt="AI Hub Logo" className="h-10 w-auto" />
-              <h2 className="text-3xl font-bold tracking-tighter text-white">
-                AI Hub
-              </h2>
+    <footer className="bg-[#0B1B2B] text-gray-300 px-6 md:px-20 py-12">
+      <div className="grid md:grid-cols-5 gap-10">
+
+        {/* Logo + Description */}
+        <div>
+          <h2 className="text-white text-2xl font-semibold mb-4">
+            DigiTools
+          </h2>
+          <p className="text-sm leading-relaxed">
+            Premium digital tools for creators, professionals, and businesses.
+            Work smarter with our suite of powerful tools.
+          </p>
+        </div>
+
+        {/* Product */}
+        <div>
+          <h3 className="text-white font-semibold mb-4">Product</h3>
+          <ul className="space-y-2 text-sm">
+            <li className="hover:text-white cursor-pointer">Features</li>
+            <li className="hover:text-white cursor-pointer">Pricing</li>
+            <li className="hover:text-white cursor-pointer">Templates</li>
+            <li className="hover:text-white cursor-pointer">Integrations</li>
+          </ul>
+        </div>
+
+        {/* Company */}
+        <div>
+          <h3 className="text-white font-semibold mb-4">Company</h3>
+          <ul className="space-y-2 text-sm">
+            <li className="hover:text-white cursor-pointer">About</li>
+            <li className="hover:text-white cursor-pointer">Blog</li>
+            <li className="hover:text-white cursor-pointer">Careers</li>
+            <li className="hover:text-white cursor-pointer">Press</li>
+          </ul>
+        </div>
+
+        {/* Resources + Social */}
+        <div>
+          <h3 className="text-white font-semibold mb-4">Resources</h3>
+          <ul className="space-y-2 text-sm mb-4">
+            <li className="hover:text-white cursor-pointer">Documentation</li>
+            <li className="hover:text-white cursor-pointer">Help Center</li>
+            <li className="hover:text-white cursor-pointer">Community</li>
+            <li className="hover:text-white cursor-pointer">Contact</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="text-white font-semibold mb-4">Social Links</h3>
+          <div className="flex space-x-3 mt-4">
+            <div className="bg-white text-black p-2 rounded-full cursor-pointer hover:scale-110 transition">
+              <FaYoutube />
             </div>
-
-            <p className="text-zinc-400 text-lg max-w-md">
-              One subscription. Access to all frontier AI models in a single
-              powerful platform.
-            </p>
-
-            {/* <div className="mt-8 flex gap-6 text-2xl text-zinc-500">
-                            <a href="#" className="hover:text-red-500 transition-colors"><FaTwitter /></a>
-                            <a href="#" className="hover:text-red-500 transition-colors"><FaGithub /></a>
-                            <a href="#" className="hover:text-red-500 transition-colors"><FaLinkedin /></a>
-                            <a href="#" className="hover:text-red-500 transition-colors"><FaDiscord /></a>
-                            <a href="#" className="hover:text-red-500 transition-colors"><FaYoutube /></a>
-                        </div> */}
-          </div>
-
-          {/* Quick Links */}
-          <div className="md:col-span-2">
-            <h3 className="text-red-400 font-semibold mb-6 text-lg">Product</h3>
-            <ul className="space-y-4 text-zinc-400">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Models
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  API
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="md:col-span-2">
-            <h3 className="text-red-400 font-semibold mb-6 text-lg">Company</h3>
-            <ul className="space-y-4 text-zinc-400">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="md:col-span-3">
-            <h3 className="text-red-400 font-semibold mb-6 text-lg">Legal</h3>
-            <ul className="space-y-4 text-zinc-400">
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition">
-                  Cookie Settings
-                </a>
-              </li>
-            </ul>
+            <div className="bg-white text-black p-2 rounded-full cursor-pointer hover:scale-110 transition">
+              <FaFacebookF />
+            </div>
+            <div className="bg-white text-black p-2 rounded-full cursor-pointer hover:scale-110 transition">
+              <FaXTwitter />
+            </div>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-          <div>© {new Date().getFullYear()} AI Hub. All rights reserved.</div>
 
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-red-400 transition">
-              Made with ❤️ for AI enthusiasts
-            </a>
-          </div>
+      </div>
+
+      {/* Bottom */}
+      <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>© 2026 DigiTools. All rights reserved.</p>
+
+        <div className="flex space-x-6 mt-3 md:mt-0">
+          <span className="hover:text-white cursor-pointer">Privacy Policy</span>
+          <span className="hover:text-white cursor-pointer">Terms of Service</span>
+          <span className="hover:text-white cursor-pointer">Cookies</span>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
