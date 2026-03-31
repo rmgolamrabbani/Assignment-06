@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+       <NavBar carts={carts} setActiveTab={setActiveTab} />
 
       <Banner />
 

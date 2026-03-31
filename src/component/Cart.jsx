@@ -29,6 +29,7 @@ const Cart = ({ carts, setCarts }) => {
         </div>
         
         <p className="text-gray-400 text-lg font-medium">
+          
           Your cart is empty
         </p>
         
