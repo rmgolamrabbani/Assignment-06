@@ -7,6 +7,7 @@ import NavBar from "./component/NavBar";
 import GetStarted from "./component/GetStarted";
 import Transparent from "./component/Transparent";
 import Rating from "./component/Rating";
+import TransformSection from "./component/TransformSection"
 
 import { ToastContainer } from 'react-toastify'
 
@@ -55,6 +56,7 @@ function App() {
 
       <GetStarted/>
       <Transparent/>
+      <TransformSection/>
       <Footer />
 
        <ToastContainer/>

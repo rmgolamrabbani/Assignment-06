@@ -1,8 +1,8 @@
 export default function TransformSection() {
   return (
-    <section className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 py-16 px-6 md:px-20 text-center text-white">
+    <section className="bg-gradient-to-b from-indigo-600 to-purple-600 py-16 px-6 md:px-20 text-center text-white">
       
-      <div className="max-w-3xl mx-auto border border-white/20 rounded-xl p-10">
+      <div className="max-w-3xl mx-auto rounded-xl p-10">
         
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
