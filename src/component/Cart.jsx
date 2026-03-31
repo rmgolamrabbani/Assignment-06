@@ -25,7 +25,7 @@ const Cart = ({ carts, setCarts }) => {
 
       <div className="flex-grow flex flex-col items-center justify-center space-y-4">
         <div className="p-6 bg-gray-50 rounded-full">
-         
+         <img className="w-20 h-20" src="./shopping-cart.png" alt="" />
         </div>
         
         <p className="text-gray-400 text-lg font-medium">

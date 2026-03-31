@@ -13,6 +13,8 @@ const NavBar = ({ carts, setActiveTab }) => {
           <li><a>Products</a></li>
           <li><a>Features</a></li>
           <li><a>Pricing</a></li>
+          <li><a>Testimonials</a></li>
+          <li><a>FAQ</a></li>
         </ul>
       </div>
 
