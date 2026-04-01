@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-[#0B1B2B] text-gray-300 px-6 md:px-20 py-12">
       <div className="grid md:grid-cols-5 gap-10">
 
-        {/* Logo + Description */}
+        {/* Logo and Description */}
         <div>
           <h2 className="text-white text-2xl font-semibold mb-4">
             DigiTools
@@ -38,7 +38,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Resources + Social */}
+        {/* Resources and Social */}
         <div>
           <h3 className="text-white font-semibold mb-4">Resources</h3>
           <ul className="space-y-2 text-sm mb-4">
@@ -67,7 +67,7 @@ export default function Footer() {
 
       </div>
 
-      {/* Bottom */}
+      {/* copyright */}
       <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
         <p>© 2026 DigiTools. All rights reserved.</p>
 

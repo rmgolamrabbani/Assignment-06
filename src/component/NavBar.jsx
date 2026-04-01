@@ -20,15 +20,15 @@ const NavBar = ({ carts, setActiveTab }) => {
 
       <div className="navbar-end gap-5">
 
-        {/* Cart Icon */}
-        <div className="relative cursor-pointer">
-  <img className="w-6" src="/shopping-cart.png" alt="" />
 
-  {carts.length > 0 && (
-    <span className="hidden md:inline absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 rounded-full">
-      {carts.length}
-    </span>
-  )}
+        <div className="relative cursor-pointer">
+          <img className="w-6" src="/shopping-cart.png" alt="" />
+
+          {carts.length > 0 && (
+            <span className="hidden md:inline absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 rounded-full">
+              {carts.length}
+            </span>
+          )}
         </div>
 
         <p className="font-bold">Login</p>

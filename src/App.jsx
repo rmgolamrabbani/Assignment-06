@@ -26,40 +26,40 @@ function App() {
 
   return (
     <>
-       <NavBar carts={carts} setActiveTab={setActiveTab} />
+      <NavBar carts={carts} setActiveTab={setActiveTab} />
 
       <Banner />
 
-      <Rating/>
+      <Rating />
 
-    <div className="tabs tabs-box justify-center bg-transparent gap-2">
-  <input
-    type="radio"
-    name="my_tabs_1"
-    className="tab rounded-full w-40 checked:!bg-gradient-to-r checked:!from-[#8B5CF6] checked:!to-[#A855F7] checked:!text-white border-none transition-all duration-300 shadow-md"
-    aria-label="Products"
-    onClick={() => setActiveTab("model")}
-    defaultChecked
-  />
-  <input
-    type="radio"
-    name="my_tabs_1"
-    className="tab rounded-full w-40 checked:!bg-gradient-to-r checked:!from-[#8B5CF6] checked:!to-[#A855F7] checked:!text-white border-none transition-all duration-300 shadow-md"
-    aria-label={`Cart (${carts.length})`}
-    onClick={() => setActiveTab("cart")}
-  />
-</div>
+      <div className="tabs tabs-box justify-center bg-transparent gap-2">
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40 checked:!bg-gradient-to-r checked:!from-[#8B5CF6] checked:!to-[#A855F7] checked:!text-white border-none transition-all duration-300 shadow-md"
+          aria-label="Products"
+          onClick={() => setActiveTab("model")}
+          defaultChecked
+        />
+        <input
+          type="radio"
+          name="my_tabs_1"
+          className="tab rounded-full w-40 checked:!bg-gradient-to-r checked:!from-[#8B5CF6] checked:!to-[#A855F7] checked:!text-white border-none transition-all duration-300 shadow-md"
+          aria-label={`Cart (${carts.length})`}
+          onClick={() => setActiveTab("cart")}
+        />
+      </div>
 
-      {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>}
+      {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />}
 
-      {activeTab === "cart" && <Cart  carts={carts} setCarts={setCarts}/>}
+      {activeTab === "cart" && <Cart carts={carts} setCarts={setCarts} />}
 
-      <GetStarted/>
-      <Transparent/>
-      <TransformSection/>
+      <GetStarted />
+      <Transparent />
+      <TransformSection />
       <Footer />
 
-       <ToastContainer/>
+      <ToastContainer />
     </>
   );
 }

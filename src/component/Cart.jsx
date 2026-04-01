@@ -21,23 +21,23 @@ const Cart = ({ carts, setCarts }) => {
       {carts.length === 0 ? (
         <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-sm border border-gray-100 min-h-[400px] flex flex-col">
 
-    
 
-      <div className="flex-grow flex flex-col items-center justify-center space-y-4">
-        <div className="p-6 bg-gray-50 rounded-full">
-         <img className="w-20 h-20" src="./shopping-cart.png" alt="" />
+
+          <div className="flex-grow flex flex-col items-center justify-center space-y-4">
+            <div className="p-6 bg-gray-50 rounded-full">
+              <img className="w-20 h-20" src="./shopping-cart.png" alt="" />
+            </div>
+
+            <p className="text-gray-400 text-lg font-medium">
+
+              Your cart is empty
+            </p>
+
+            <button className="mt-2 px-6 py-2 bg-purple-400 text-white rounded-full hover:bg-purple-600 transition-colors text-sm">
+              Buy Now
+            </button>
+          </div>
         </div>
-        
-        <p className="text-gray-400 text-lg font-medium">
-          
-          Your cart is empty
-        </p>
-        
-        <button className="mt-2 px-6 py-2 bg-purple-400 text-white rounded-full hover:bg-purple-600 transition-colors text-sm">
-          Buy Now
-        </button>
-      </div>
-    </div>
       ) : (
         <>
           <div className="space-y-5 mt-4">
@@ -59,7 +59,7 @@ const Cart = ({ carts, setCarts }) => {
                   </div>
                 </div>
 
-                <div className="flex gap-10">                
+                <div className="flex gap-10">
                   <button
                     onClick={() => handleDelete(item)}
                     className=" btn rounded-full btn-error text-white"

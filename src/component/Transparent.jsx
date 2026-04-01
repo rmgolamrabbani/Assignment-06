@@ -32,13 +32,13 @@ const Pricing = () => {
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
+       
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Simple, Transparent Pricing</h2>
           <p className="text-gray-500">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
         </div>
 
-        {/* Pricing Cards Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {plans.map((plan, index) => (
             <div
@@ -49,7 +49,7 @@ const Pricing = () => {
                 : "bg-gray-50 text-slate-900 border-gray-100 hover:border-purple-200"
               }`}
             >
-              {/* Popular Tag */}
+             
               {plan.isPopular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-200 text-yellow-800 text-xs font-bold px-4 py-1 rounded-full shadow-md">
                   Most Popular

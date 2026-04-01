@@ -12,7 +12,7 @@ const StatsSection = () => {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-around gap-8 md:gap-0">
         {stats.map((stat, index) => (
           <React.Fragment key={index}>
-            {/* Stat Item */}
+
             <div className="text-center text-white flex-1">
               <h2 className="text-4xl md:text-5xl font-bold mb-2">
                 {stat.value}
